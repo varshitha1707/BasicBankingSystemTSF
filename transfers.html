@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+    <title>GRINGOTTS - Safe Transfers</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">A BASIC BANKING SYSTEM </span>
+    <span class="site-heading-lower">SPARKS FOUNDATION</span>
+       <div class="mx-auto text-center">
+            <h1 class="text-white-500 mx-auto mt-mb5">
+                  GRINGOTTS</h1>                  
+                    
+        </div>
+  </h1>
+
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">BASIC BANKING SYSTEM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="home.html">home
+              
+            </a>
+          </li>
+             <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="customers.html">customer's table</a>
+          </li>
+             <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="transfers.html">transfer's table
+                 <span class="sr-only">(current)</span>
+                 </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    
+    
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">task one</span>
+            <span class="section-heading-lower">TRANSFER'S TABLE</span>
+          </h2>
+          <p class="mb-3">This table shows you all the transfers.
+              <br>
+              Click here, to go to customer's table.
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="customers.html">CUSTOMER'S TABLE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+    
+    <!-- Modal SEE merMoney -->
+    <div class="modal fade" id="seemerMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "mertrans.value=mertrans.value + 1">show</button>
+                        <output id= "mertrans" for="mertrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+     <!-- Modal SEE derMoney -->
+    <div class="modal fade" id="seederMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "dertrans.value=dertrans.value + 1">show</button>
+                        <output id= "dertrans" for="dertrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+       
+    
+    <!-- Modal SEE lexMoney -->
+    <div class="modal fade" id="seelexMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "lextrans.value=lextrans.value + 1">show</button>
+                        <output id= "lextrans" for="lextrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+    
+    <!-- Modal SEE markMoney -->
+    <div class="modal fade" id="seemarkMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "marktrans.value=marktrans.value + 1">show</button>
+                        <output id= "marktrans" for="marktrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <!-- Modal SEE alexMoney -->
+    <div class="modal fade" id="seealexMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "alextrans.value=alextrans.value + 1">show</button>
+                        <output id= "alextrans" for="alextrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <!-- Modal SEE crisMoney -->
+    <div class="modal fade" id="seecrisMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "cristrans.value=cristrans.value + 1">show</button>
+                        <output id= "cristrans" for="cristrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    <!-- Modal SEE joMoney -->
+    <div class="modal fade" id="seejoMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "jotrans.value=jotrans.value + 1">show</button>
+                        <output id= "jotrans" for="jotrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <!-- Modal SEE izMoney -->
+    <div class="modal fade" id="seeizMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "iztrans.value=iztrans.value + 1">show</button>
+                        <output id= "iztrans" for="iztrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    <!-- Modal SEE amyMoney -->
+    <div class="modal fade" id="seeamyMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "amytrans.value=amytrans.value + 1">show</button>
+                        <output id= "amytrans" for="amytrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+     <!-- Modal SEE linkMoney -->
+    <div class="modal fade" id="seelinkMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">transfers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                       
+                        <button type="result" class="btn btn-secondary"  onclick= "linktrans.value = + '1' ">show</button>
+                        <output id= "linktrans" for="linktrans"  ></output> 
+                        <div>
+                        <div class="input-group mb-3">
+                            </div> 
+                            <br>
+                        </div>                       
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <!--TABLE-->
+    
+    <section>
+    <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">NAME</th>
+      <th scope="col">EMAIL</th>
+     
+      <th scope="col">*CLICK*</th>
+        
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Meredith</td>
+      <td>meredith@grey.com</td>
+     
+        
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seemerMoney"  >SEE TRANSFERS</button>
+            </td>
+        <td>
+       
+
+    </tr>
+   <tr>
+      <th scope="row">2</th>
+      <td>Derek</td>
+      <td>derek@grey.com</td>
+  
+        
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seederMoney"  >SEE TRANSFERS</button>
+            </td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Lexie</td>
+      <td>lexie@grey.com</td>
+    
+         
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seelexMoney"  >SEE TRANSFERS</button>
+            </td>
+
+    </tr>
+      
+      <tr>
+      <th scope="row">4</th>
+      <td>Mark</td>
+      <td>mark@grey.com</td>
+   
+         
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seemarkMoney"  >SEE TRANSFERS</button>
+            </td>
+
+    </tr>
+      
+      <tr>
+      <th scope="row">5</th>
+      <td>Cristina</td>
+      <td>steena@grey.com</td>
+     
+         
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seecrisMoney"  >SEE TRANSFERS</button>
+            </td>
+
+    </tr>
+      <tr>
+      <th scope="row">6</th>
+      <td>Alex</td>
+      <td>alex@grey.com</td>
+     
+       
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seealexMoney"  >SEE TRANSFERS</button>
+            </td>
+    </tr>
+      <tr>
+      <th scope="row">7</th>
+      <td>Josephine</td>
+      <td>jo@grey.com</td>
+   
+      
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seejoMoney"  >SEE TRANSFERS</button>
+            </td>
+
+    </tr>
+      <tr>
+      <th scope="row">8</th>
+      <td>Izzie</td>
+      <td>iz@grey.com</td>
+    
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seeizMoney"  >SEE TRANSFERS</button>
+            </td>
+
+    </tr>
+      <tr>
+      <th scope="row">9</th>
+      <td>Amelia</td>
+      <td>amy@grey.com</td>
+      
+        
+       <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seeamyMoney"  >SEE TRANSFERS</button>
+            </td>
+
+    <tr>
+      <th scope="row">10</th>
+      <td>Link</td>
+      <td>link@grey.com</td>
+     
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#seelinkMoney"  >SEE TRANSFERS</button>
+            </td>
+    </tr>
+
+  </tbody>
+        
+        
+</table></section>
+    
+    
+    
+    
+    
+    <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">BASIC BANKING SYSTEM</span>
+              <span class="section-heading-lower">WHAT IT DOES:</span>
+            </h2>
+            <p class="mb-0">THIS IS A BASIC BANKING SYSTEM WHERE YOU CAN TRANSFER MONEY FROM ONE PERSON TO ANOTHER JUST BY CLICKING THE TRANSFER BUTTON IN THE TABLE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+       <p class="m-0 small">Copyright &copy; GRINGOTTS 2021</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

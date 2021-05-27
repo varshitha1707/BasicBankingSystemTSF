@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+   <title>GRINGOTTS - Safe Transfers</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">A BASIC BANKING SYSTEM </span>
+    <span class="site-heading-lower">SPARKS FOUNDATION</span>
+       <div class="mx-auto text-center">
+            <h1 class="text-white-500 mx-auto mt-mb5">
+                  GRINGOTTS</h1>                  
+                    
+        </div>
+  </h1>
+
+    
+    
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">BASIC BANKING SYSTEM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="home.html">home
+              
+            </a>
+          </li>
+             <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="customers.html">customer's table
+           <span class="sr-only">(current)</span>
+
+                 </a>
+          </li>
+             <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="transfers.html">transfer's table</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    
+    
+    
+    <!-- Modal Mer Money -->
+    <div class="modal fade" id="merMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        
+                        <div>
+                        <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" 
+                    
+                                                                                       
+                onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    merop.value=(merop.value)-parseInt(derTr.value)
+                    
+                     mertrans.value= + 1 "    >Send to Derek </button>
+                            
+                            </div>
+                           
+                               <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    merop.value=(merop.value)-parseInt(lexTr.value)
+                     mertrans.value= + 1 ">Send to Lexie </button>
+                           </div>
+                                </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    merop.value=(merop.value)-parseInt(markTr.value)
+                     mertrans.value= + 1 ">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    merop.value=(merop.value)-parseInt(crisTr.value)
+                     mertrans.value= + 1 ">Send to Cristina </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    merop.value=(merop.value)-parseInt(alexTr.value)
+                     mertrans.value= + 1 ">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    merop.value=(merop.value)-parseInt(joTr.value)
+                     mertrans.value= + 1 ">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    merop.value=(merop.value)-parseInt(izTr.value)
+                     mertrans.value= + 1 ">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    merop.value=(merop.value)-parseInt(amyTr.value)
+                     mertrans.value= + 1 ">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    merop.value=(merop.value)-parseInt(linkTr.value)
+                     mertrans.value= + 1 ">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        
+                        
+                        </form>
+                        </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+       <!-- Modal derek Money -->
+    <div class="modal fade" id="derekMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div>
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                    derop.value=(derop.value)-parseInt(merTr.value)
+                    dertrans.value= + 1 ">Send to Meredith</button>
+                                </div>
+                            <br>
+                             <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    derop.value=(derop.value)-parseInt(lexTr.value)
+                    dertrans.value= + 1 ">Send to Lexie </button>
+                           </div>
+                                </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    derop.value=(derop.value)-parseInt(markTr.value)
+                    dertrans.value= + 1 ">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    derop.value=(derop.value)-parseInt(crisTr.value)
+                    dertrans.value= + 1 ">Send to Cristina </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    derop.value=(derop.value)-parseInt(alexTr.value)
+                    dertrans.value= + 1 ">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    derop.value=(derop.value)-parseInt(joTr.value)
+                    dertrans.value= + 1 ">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    derop.value=(derop.value)-parseInt(izTr.value)
+                    dertrans.value= + 1 ">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    derop.value=(derop.value)-parseInt(amyTr.value)
+                    dertrans.value= + 1 ">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    derop.value=(derop.value)-parseInt(linkTr.value)
+                    dertrans.value= + 1 ">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    <!-- Modal lexie Money -->
+    <div class="modal fade" id="lexieMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                    lexop.value=(lexop.value)-parseInt(merTr.value)
+                    lextrans.value= + 1 ">Send to Meredith</button>
+                            <br>
+                             
+                            </div>
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    lexop.value=(lexop.value)-parseInt(derTr.value)
+                    lextrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    lexop.value=(lexop.value)-parseInt(markTr.value)
+                    lextrans.value= + 1">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    lexop.value=(lexop.value)-parseInt(crisTr.value)
+                    lextrans.value= + 1">Send to Cristina </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    lexop.value=(lexop.value)-parseInt(alexTr.value)
+                    lextrans.value= + 1">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    lexop.value=(lexop.value)-parseInt(joTr.value)
+                    lextrans.value= + 1">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    lexop.value=(lexop.value)-parseInt(izTr.value)
+                    lextrans.value= + 1">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    lexop.value=(lexop.value)-parseInt(amyTr.value)
+                    lextrans.value= + 1">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    lexop.value=(lexop.value)-parseInt(linkTr.value)
+                    lextrans.value= + 1">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    <!-- Modal mark Money -->
+    <div class="modal fade" id="markMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                markop.value=(markop.value)-parseInt(merTr.value)
+                   marktrans.value= + 1">Send to Meredith</button>
+                            </div> 
+                            <div>
+                                <br>  
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    markop.value=(markop.value)-parseInt(derTr.value)
+                    marktrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            
+                            <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    markop.value=(markop.value)-parseInt(lexTr.value)
+                    marktrans.value= + 1">Send to Lexie </button>
+                           </div>
+                                </div>
+                            
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    markop.value=(markop.value)-parseInt(crisTr.value)
+                    marktrans.value= + 1">Send to Cristina </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    markop.value=(markop.value)-parseInt(alexTr.value)
+                    marktrans.value= + 1">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    markop.value=(markop.value)-parseInt(joTr.value)
+                    marktrans.value= + 1">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    markop.value=(markop.value)-parseInt(izTr.value)
+                    marktrans.value= + 1">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    markop.value=(markop.value)-parseInt(amyTr.value)
+                    marktrans.value= + 1">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    markop.value=(markop.value)-parseInt(linkTr.value)
+                    marktrans.value= + 1">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+     <!-- Modal cristina Money -->
+    <div class="modal fade" id="crisMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                crisop.value=(crisop.value)-parseInt(merTr.value)
+                    cristrans.value= + 1">Send to Meredith</button>
+                            </div>
+                            <div> 
+                                 <br>
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    crisop.value=(crisop.value)-parseInt(derTr.value)
+                    cristrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            
+                            <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    crisop.value=(crisop.value)-parseInt(lexTr.value)
+                    cristrans.value= + 1">Send to Lexie </button>
+                           </div>
+                                </div>
+                            
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    crisop.value=(crisop.value)-parseInt(markTr.value)
+                    cristrans.value= + 1">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    crisop.value=(crisop.value)-parseInt(alexTr.value)
+                    cristrans.value= + 1">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    crisop.value=(crisop.value)-parseInt(joTr.value)
+                    cristrans.value= + 1">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    crisop.value=(crisop.value)-parseInt(izTr.value)
+                    cristrans.value= + 1">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    crisop.value=(crisop.value)-parseInt(amyTr.value)
+                    cristrans.value= + 1">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient'sRecipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    crisop.value=(crisop.value)-parseInt(linkTr.value)
+                    cristrans.value= + 1">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div> </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    <!-- Modal alex Money -->
+    <div class="modal fade" id="alexMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                alexop.value=(alexop.value)-parseInt(merTr.value)
+                    alextrans.value= + 1">Send to Meredith</button>
+                            </div>
+                            <div> 
+                                 <br>
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    alexop.value=(alexop.value)-parseInt(derTr.value)
+                    alextrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            
+                            <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    alexop.value=(alexop.value)-parseInt(lexTr.value)
+                    alextrans.value= + 1">Send to Lexie </button>
+                           </div>
+                                </div>
+                            
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    alexop.value=(alexop.value)-parseInt(markTr.value)
+                    alextrans.value= + 1">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    alexop.value=(alexop.value)-parseInt(alexTr.value)
+                    alextrans.value= + 1">Send to Cristina </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    alexop.value=(alexop.value)-parseInt(joTr.value)
+                    alextrans.value= + 1">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    alexop.value=(alexop.value)-parseInt(izTr.value)
+                    alextrans.value= + 1">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    alexop.value=(alexop.value)-parseInt(amyTr.value)
+                    alextrans.value= + 1">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    alexop.value=(alexop.value)-parseInt(linkTr.value)
+                    alextrans.value= + 1">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div> </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    <!-- Modal jo Money -->
+    <div class="modal fade" id="joMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                joop.value=(joop.value)-parseInt(merTr.value)
+                    jotrans.value= + 1">Send to Meredith</button>
+                            </div>
+                            <div> 
+                                 <br>
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    joop.value=(joop.value)-parseInt(derTr.value)
+                    jotrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            
+                            <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    joop.value=(joop.value)-parseInt(lexTr.value)
+                    jotrans.value= + 1">Send to Lexie </button>
+                           </div>
+                                </div>
+                            
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    joop.value=(joop.value)-parseInt(markTr.value)
+                    jotrans.value= + 1">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    joop.value=(joop.value)-parseInt(crisTr.value)
+                    jotrans.value= + 1">Send to Cristina </button>
+                            </div>
+                            <br>
+                            
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    joop.value=(joop.value)-parseInt(alexTr.value)
+                    jotrans.value= + 1">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    joop.value=(joop.value)-parseInt(izTr.value)
+                    jotrans.value= + 1">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    joop.value=(joop.value)-parseInt(amyTr.value)
+                    jotrans.value= + 1">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    joop.value=(joop.value)-parseInt(linkTr.value)
+                    jotrans.value= + 1">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div> </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <!-- Modal izzie Money -->
+    <div class="modal fade" id="izzieMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                izop.value=(izop.value)-parseInt(merTr.value)
+                    iztrans.value= + 1">Send to Meredith</button>
+                            </div>
+                            <div> 
+                                 <br>
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    izop.value=(izop.value)-parseInt(derTr.value)
+                    iztrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            
+                            <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    izop.value=(izop.value)-parseInt(lexTr.value)
+                    iztrans.value= + 1">Send to Lexie </button>
+                           </div>
+                                </div>
+                            
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    izop.value=(izop.value)-parseInt(markTr.value)
+                    iztrans.value= + 1">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    izop.value=(izop.value)-parseInt(crisTr.value)
+                    iztrans.value= + 1">Send to Cristina </button>
+                            </div>
+                            <br>
+                            
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    izop.value=(izop.value)-parseInt(alexTr.value)
+                    iztrans.value= + 1">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    izop.value=(izop.value)-parseInt(joTr.value)
+                    iztrans.value= + 1">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    izop.value=(izop.value)-parseInt(amyTr.value)
+                    iztrans.value= + 1">Send to Amelia </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    izop.value=(izop.value)-parseInt(linkTr.value)
+                    iztrans.value= + 1">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div> </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    <!-- Modal amelia Money -->
+    <div class="modal fade" id="ameliaMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                amyop.value=(amyop.value)-parseInt(merTr.value)
+                    amytrans.value= + 1">Send to Meredith</button>
+                            </div>
+                            <div> 
+                                 <br>
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    amyop.value=(amyop.value)-parseInt(derTr.value)
+                    amytrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            
+                            <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    amyop.value=(amyop.value)-parseInt(lexTr.value)
+                    amytrans.value= + 1">Send to Lexie </button>
+                           </div>
+                                </div>
+                            
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    amyop.value=(amyop.value)-parseInt(markTr.value)
+                    amytrans.value= + 1">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    amyop.value=(amyop.value)-parseInt(crisTr.value)
+                    amytrans.value= + 1">Send to Cristina </button>
+                            </div>
+                            <br>
+                            
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    amyop.value=(amyop.value)-parseInt(alexTr.value)
+                    amytrans.value= + 1">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    amyop.value=(amyop.value)-parseInt(joTr.value)
+                    amytrans.value= + 1">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    amyop.value=(amyop.value)-parseInt(izTr.value)
+                    amytrans.value= + 1">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="linkBal">
+                <input type="Text" placeholder = "Transfer Amount" id="linkTr" ><button class = "btn btn-primary" type = "button" onclick="linkop.value=parseInt(linkBal.value)+parseInt(linkTr.value)
+                    amyop.value=(amyop.value)-parseInt(linkTr.value)
+                    amytrans.value= + 1">Send to Link </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div> </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    <!-- Modal link Money -->
+    <div class="modal fade" id="linkMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                        <div class="input-group mb-3">
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="merBal">
+                <input type="Text" placeholder = "Transfer Amount" id="merTr" ><button class = "btn btn-primary" type = "button" onclick="merop.value=parseInt(merBal.value)+parseInt(merTr.value)
+                linkop.value=(linkop.value)-parseInt(merTr.value)
+                    linktrans.value= + 1">Send to Meredith</button>
+                            </div>
+                            <div> 
+                                 <br>
+                             <div class="input-group mb-3">
+                            
+                            <input type="Text" placeholder = "Enter Recipient's current Balance" id="derBal">
+                <input type="Text" placeholder = "Transfer Amount" id="derTr" ><button class = "btn btn-primary" type = "button" onclick="derop.value=parseInt(derBal.value)+parseInt(derTr.value)
+                    linkop.value=(linkop.value)-parseInt(derTr.value)
+                    linktrans.value= + 1">Send to Derek </button>
+                            
+                            </div>
+                                </div>
+                            <br>
+                            
+                            <div>  
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="lexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="lexTr" ><button class = "btn btn-primary" type = "button" onclick="lexop.value=parseInt(lexBal.value)+parseInt(lexTr.value)
+                    linkop.value=(linkop.value)-parseInt(lexTr.value)
+                    linktrans.value= + 1">Send to Lexie </button>
+                           </div>
+                                </div>
+                            
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="markBal">
+                <input type="Text" placeholder = "Transfer Amount" id="markTr" ><button class = "btn btn-primary" type = "button" onclick="markop.value=parseInt(markBal.value)+parseInt(markTr.value)
+                    linkop.value=(linkop.value)-parseInt(markTr.value)
+                    linktrans.value= + 1">Send to Mark </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="crisBal">
+                <input type="Text" placeholder = "Transfer Amount" id="crisTr" ><button class = "btn btn-primary" type = "button" onclick="crisop.value=parseInt(crisBal.value)+parseInt(crisTr.value)
+                    linkop.value=(linkop.value)-parseInt(crisTr.value)
+                    linktrans.value= + 1">Send to Cristina </button>
+                            </div>
+                            <br>
+                            
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="alexBal">
+                <input type="Text" placeholder = "Transfer Amount" id="alexTr" ><button class = "btn btn-primary" type = "button" onclick="alexop.value=parseInt(alexBal.value)+parseInt(alexTr.value)
+                    linkop.value=(linkop.value)-parseInt(alexTr.value)
+                    linktrans.value= + 1">Send to Alex </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="joBal">
+                <input type="Text" placeholder = "Transfer Amount" id="joTr" ><button class = "btn btn-primary" type = "button" onclick="joop.value=parseInt(joBal.value)+parseInt(joTr.value)
+                    linkop.value=(linkop.value)-parseInt(joTr.value)
+                    linktrans.value= + 1">Send to Josephine </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="izBal">
+                <input type="Text" placeholder = "Transfer Amount" id="izTr" ><button class = "btn btn-primary" type = "button" onclick="izop.value=parseInt(izBal.value)+parseInt(izTr.value)
+                    linkop.value=(linkop.value)-parseInt(izTr.value)
+                    linktrans.value= + 1">Send to Izzie </button>
+                            </div>
+                            <br>
+                            <div><input type="Text" placeholder = "Enter Recipient's current Balance" id="amyBal">
+                <input type="Text" placeholder = "Transfer Amount" id="amyTr" ><button class = "btn btn-primary" type = "button" onclick="amyop.value=parseInt(amyBal.value)+parseInt(amyTr.value)
+                    izop.value=(izop.value)-parseInt(amyTr.value)
+                    linktrans.value= + 1">Send to Amelia </button>
+                            </div>
+                            <br>
+                            </div>
+                        </form>
+                        </div> </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro2.jpg" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">TASK ONE</span>
+            <span class="section-heading-lower">CUSTOMER'S TABLE</span>
+          </h2>
+          <p class="mb-3">Here, all you have to do is click on the 'TRANSFER' button and your money will be transfered.
+              <br>
+              To go to the Transfers table click here.
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="transfers.html">TRANSFERS TABLE.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+    <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">VERY IMPORTANT:</span>
+              <span class="section-heading-lower"><bold>NOTE</bold></span>
+            </h2>
+            <p class="mb-0">First thing to do would be to set everyone's current balance to 1000 and then start with the transactions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+    <!--TABLE--> 
+    
+<section>
+    <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">NAME</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">ORIGINAL BALANCE</th>
+      <th scope="col">CURRENT BALANCE</th>  
+      <th scope="col">*CLICK*</th>
+    
+  
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Meredith</td>
+      <td>meredith@grey.com</td>
+      <td>1000</td>
+          <td><output id ="merop" for="merBal merTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#merMoney"  >Send Money</button>
+        </td>
+
+    </tr>
+   <tr>
+      <th scope="row">2</th>
+      <td>Derek</td>
+      <td>derek@grey.com</td>
+      <td>1000</td>
+          <td><output id ="derop" for="derbal derTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#derekMoney">Send Money</button>
+            </td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Lexie</td>
+      <td>lexie@grey.com</td>
+      <td>1000</td>
+          <td><output id ="lexop" for="lexBal lexTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#lexieMoney">Send Money</button>
+            </td>
+
+    </tr>
+      
+      <tr>
+      <th scope="row">4</th>
+      <td>Mark</td>
+      <td>mark@grey.com</td>
+      <td>1000</td>
+          <td><output id ="markop" for="markBal markTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#markMoney">Send Money</button>
+            </td>
+
+    </tr>
+      
+      <tr>
+      <th scope="row">5</th>
+      <td>Cristina</td>
+      <td>steena@grey.com</td>
+      <td>1000</td>
+          <td><output id ="crisop" for="crisBal crisTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#crisMoney">Send Money</button>
+            </td>
+
+    </tr>
+      <tr>
+      <th scope="row">6</th>
+      <td>Alex</td>
+      <td>alex@grey.com</td>
+      <td>1000</td>
+          <td><output id ="alexop" for="alexBal alexTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#alexMoney">Send Money</button>
+            </td>
+
+    </tr>
+      <tr>
+      <th scope="row">7</th>
+      <td>Josephine</td>
+      <td>jo@grey.com</td>
+      <td>1000</td>
+          <td><output id ="joop" for="joBal joTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#joMoney">Send Money</button>
+            </td>
+
+    </tr>
+      <tr>
+      <th scope="row">8</th>
+      <td>Izzie</td>
+      <td>iz@grey.com</td>
+      <td>1000</td>
+          <td><output id ="izop" for="izBal izTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#izzieMoney">Send Money</button>
+            </td>
+
+    </tr>
+      <tr>
+      <th scope="row">9</th>
+      <td>Amelia</td>
+      <td>amy@grey.com</td>
+      <td>1000</td>
+          <td><output id ="amyop" for="amyBal amyTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#ameliaMoney">Send Money</button>
+            </td>
+
+    <tr>
+      <th scope="row">10</th>
+      <td>Link</td>
+      <td>link@grey.com</td>
+      <td>1000</td>
+          <td><output id ="linkop" for="linkBal linkTr"></output>
+                </td>
+        <td>
+            <button class="btn btn-info" data-toggle="modal" data-target="#linkMoney">Send Money</button>
+            </td>
+    </tr>
+
+  </tbody>
+        
+        
+</table></section>
+    
+    
+    
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">BASIC BANKING SYSTEM</span>
+              <span class="section-heading-lower">WHAT IT DOES:</span>
+            </h2>
+            <p class="mb-0">THIS IS A BASIC BANKING SYSTEM WHERE YOU CAN TRANSFER MONEY FROM ONE PERSON TO ANOTHER JUST BY CLICKING THE TRANSFER BUTTON IN THE TABLE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+       <p class="m-0 small">Copyright &copy; GRINGOTTS 2021</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
