@@ -1,69 +1,30 @@
-# [Start Bootstrap - Business Casual](https://startbootstrap.com/theme/business-casual/)
+# Basic.banking.system.TSF
 
-[Business Casual](https://startbootstrap.com/theme/business-casual/) is a multipurpose website theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a landing page, about page, blog page, and a contact page along with various custom styles and components.
+Sparks Foundation Internship Project : Basic Banking System
+A Web Application used to transfer money between multiple users (Project contains 10 dummy users).
 
-## Preview
+# CREATED BY VARSHITHA
 
-[![Business Casual Preview](https://assets.startbootstrap.com/img/screenshots/themes/business-casual.png)](https://startbootstrap.github.io/startbootstrap-business-casual/)
+To Create a simple dynamic website which has the following specs.
+        
+        ◇ Start with creating a dummy data in database for upto 10
+        customers. Database options: Mysql, Mongo, Postgres, etc.
+        Customers table will have basic fields such as name, email,
+        current balance etc. Transfers table will record all transfers
+        happened.
+        
+        ◇ Flow: Home Page > View all Customers > Select and View one
+        Customer > Transfer Money > Select customer to transfer to >
+        View all Customers .
+        
+        ◇ No Login Page. No User Creation. Only transfer of money
+        between multiple users.
+        ◇ Host the website at 000webhost, github.io, heroku app or any
+        other free hosting provider. Check in code in gitlab.
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-business-casual/)**
+Stack used - Front-end : HTML, CSS, Bootstrap & Javascript 
 
-## Status
+Database contains two Tables- Customer's Table & Transfers Table
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-business-casual/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-business-casual.svg)](https://www.npmjs.com/package/startbootstrap-business-casual)
-[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-business-casual.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-business-casual)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-business-casual/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-business-casual)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-business-casual/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-business-casual?type=dev)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/business-casual/)
-* Install via npm: `npm i startbootstrap-business-casual`
-* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-business-casual.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-business-casual)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-#### Gulp Tasks
-
-* `gulp` the default task that builds everything
-* `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-* `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-* `gulp js` minifies the themes JS file
-* `gulp vendor` copies dependencies from node_modules to the vendor directory
-
-You must have npm installed globally in order to use this build environment.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-business-casual/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/theme/business-casual/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* <https://startbootstrap.com>
-* <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-* <https://davidmiller.io>
-* <https://twitter.com/davidmillerhere>
-* <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-business-casual/blob/gh-pages/LICENSE) license.
+Customer's table have basic fields such as name, email & current balance.
+Transfers table records all transfers happened along with their time.
